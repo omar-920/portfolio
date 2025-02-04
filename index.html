@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <div class="logo">
+                <h1><span>
+                        O
+                    </span>MAR</h1>
+            </div>
+            <nav class="nav-1">
+                <ul id="sidemenu">
+                    <li>
+                        <a href="#home">
+                            Home
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#about">
+                            About
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#services">
+                            Services
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#portfolio">
+                            Portfolio
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#contact">
+                            Contact
+                        </a>
+                    </li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+
+            </nav>
+
+            <div class="header-txt">
+                <p>Full<span>
+                        - Stack
+                    </span>- Developer</p>
+                <h2>Hi, I'm
+                    <span>
+                        Omar
+                    </span> <br> Tarek 
+                </h2>
+
+            </div>
+        </div>
+
+    </div>
+    <!--    about    -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="./images/user.png">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">
+                        About Me
+                    </h1>
+                    <p>
+                       
+                    I’m a technology enthusiast with a deep passion for computer science. I love spending hours working on projects, solving complex problems, and continuously improving my work. Whenever I encounter something new or unfamiliar, I dive into resources like YouTube and other platforms to learn it and then apply it in real projects. The challenges I face motivate me to find better solutions and push the boundaries of what I can create. I believe in constant learning and strive to ensure that every project I work on evolves and improves over time.
+                    
+                    </p>
+                    <div class="tab-title">
+                        <p class="tab-links active-link" onclick="opentab('skills')">
+                            Skills
+                        </p>
+                        <p class="tab-links" onclick="opentab('experience')">
+                            Experience
+                        </p>
+                        <p class="tab-links" onclick="opentab('education')">
+                            Education
+                        </p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li>
+                                <span>
+                                    Front-End
+                                </span>
+                                <br>
+                                Designing Web/ App Interfaces <br>
+                                Technologies : HTML , CSS , JS , JQUERY , BOOTSTRAP , VUE JS <br>
+                            </li>
+                            <li>
+                                <span>
+                                    Web Development
+                                </span>
+                                <br>
+                                Web App Development using : <br>
+                                PHP , Laravel , laravel API , Blade , MYSQL
+                                Tools: Git, Github, VS Code
+                            </li>
+                            <li>
+                                <span>
+                                    Soft Skills:
+                                </span><br>
+                                Self-Learning, Problem-Solving, Team Collaboration ,Clear and effective communication (written and verbal). <br> Team collaboration and active listening. <br>Proficient in explaining technical concepts to non-technical audiences.
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li>
+                                <span> Createivo - Software Development Intern | 18/7/2023 – 30/9/2023</span><br>
+                                -Collaborated with the development team to build and maintain web
+                                applications.<br>-Gained hands-on experience with Laravel, Vue.js, and MySQL in a
+                                professional environment.<br>- Learned best practices in coding, version control (Git), and team
+                                collaboration.
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li>
+                                <span>
+                                    High School Diploma | Demishalt secondary school | 2024
+                                </span>
+                                <br>
+                                - Major: Department of Mathematics . <br>
+                                - Percentage : 90%.
+                            </li>
+                            <li>
+                                <span>
+                                    Completed relevant coursework in web development, database management, andsoftware engineering
+                                </span>
+                            </li>
+                            
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-crop-simple"></i>
+                    <h2>FrontEnd</h2>
+                    <p>I specialize in creating modern, responsive, and user-friendly web interfaces using the latest front-end technologies. I build fast, interactive, and visually appealing websites that provide a seamless user experience across all devices.<br>
+
+                        ✔ Responsive & Mobile-Friendly Designs <br>
+                        ✔ Cross-Browser Compatibility<br>
+                        ✔ Continuous Updates & Improvements<br>
+                        
+                        </p>
+                    <a href="https://wa.me/+201062429970" target="_blank">Learn More</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>BackEnd</h2>
+                    <p>I specialize in building scalable, secure, and high-performance back-end systems using the latest technologies. I develop robust server-side applications that ensure seamless data processing, efficient database management, and smooth communication between the front end and back end.<br>
+
+                        ✔ Scalable & Secure API Development<br>
+                        ✔ Optimized Database Management<br>
+                        ✔ High-Performance & Efficient Server-Side Logic<br>
+                        ✔ Authentication & Authorization Systems<br>
+                        ✔ Continuous Updates & Improvements<br></p>
+                    <a href="https://wa.me/+201062429970" target="_blank">Learn More</a>
+                </div>
+
+                <div>
+                    <i class="fa-solid fa-terminal"></i>
+                    <h2>Full-Stack</h2>
+                    <p>I specialize in building full-stack web applications using Laravel for the back end and modern front-end technologies to deliver powerful, scalable, and user-friendly solutions. I create seamless web experiences with clean code, high performance, and a focus on security and usability.<br>
+
+                        ✔ Full-Stack Web Development (Laravel & Modern Front-End)<br>
+                        ✔ Scalable & Secure API Development<br>
+                        ✔ Authentication & Authorization Systems<br>
+                        ✔ Optimized Database Management<br>
+                        ✔ Continuous Updates & Performance Enhancements<br></p>
+                    <a href="https://wa.me/+201062429970" target="_blank">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!------------------------------------------ portfolio  ---------------------------------------->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="./images/work-1.png">
+                    <div class="layer">
+                        <h3>Teacher Management</h3>
+                        <p>Designed and developed a management system for teachers to organize study
+                            groups and track income.<br>  Technologies: Laravel, HTML, CSS, JavaScript, MySQL.<br>  Achievements: Created a scalable and efficient system with a user-friendly
+                            interface.</p>
+                        <a href="https://github.com/omar-920/mrmanager" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="./images/work-2.png">
+                    <div class="layer">
+                        <h3>My Portfolio</h3>
+                        <p>My protfolio : It created by HTML , CSS , JS</p>
+                        <a href="https://github.com/omar-920/omar.github.io" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="./images/work-3.png">
+                    <div class="layer">
+                        <h3>E-commerce</h3>
+                        <p>
+                            Front end project : HTML , CSS,JS <br>
+                            Ecommerce wibsite which contain Login page ,Register Page,index,products,cart,productpage
+                        </p>
+                        <a href="https://omar-920.github.io/e-commerce.github.io/" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="./projects.html" class="btn">See More</a>
+        </div>
+    </div>
+    <!------------------------------------------ Contact  ---------------------------------------->
+
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i> omarhessain920@gmail.com</p>
+                    <p><i class="fa-solid fa-square-phone"></i> +20 1062429970</p>
+                    <div class="social-icons">
+                        <a href="https://wa.me/+201062429970"><i class="fa-brands fa-whatsapp"></i></a>
+                        <a href="https://github.com/omar-920"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/omar-tarek-59a782262/"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                    <a href="./files/omar tarek.pdf" download class="btn btn-2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-whatsapp" id="submit-to-whatsapp">
+                        <input type="text" name="name" placeholder=" Insert Your Name Here..." required>
+                        <input type="email" name="email" placeholder=" Insert Your Email Here..." required>
+                        <textarea name="message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn-2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright &copy; Omar. Made By <i class="fa-solid fa-heart"></i> Omar Tarek....</p>
+        </div>
+    </div>
+
+
+
+
+    <!------------------------------------------ JS Script  ---------------------------------------->
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+
+        function openmenu() {
+            sidemenu.style.right = "0";
+        }
+
+        function closemenu() {
+            sidemenu.style.right = "-200px";
+        }
+    </script>
+    <script>
+        //  const scriptURL = 'https://script.google.com/macros/s/AKfycbzzl7g_-TaH7izwaaIY3qNECjDqGWmaE2hRW9zIRPLsQS7EJpf0mF0FCu7z09cMMKH4/exec'
+        //  const form = document.forms['submit-to-google-sheet']
+        //  const msg = document.getElementById("msg")
+        //  
+        //  form.addEventListener('submit', e => {
+        //    e.preventDefault()
+        //    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        //      .then(response => {
+        //        msg.innerHTML = "Message Sent Successfuly"
+        //        setTimeout(function(){
+        //            msg.innerHTML = ""
+        //        },5000)
+        //        form.reset()
+        //    })
+        //      .catch(error => console.error('Error!', error.message))
+        //  })
+    </script>
+
+
+    <script>
+        const form = document.forms['submit-to-whatsapp']
+
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+
+            // قم بجمع بيانات النموذج
+            const formData = new FormData(form)
+            const name = formData.get('name')
+            const email = formData.get('email')
+            const message = formData.get('message')
+
+            // قم ببناء رابط الرسالة على WhatsApp
+            const whatsappMessage = `اسم: ${name}بريد إلكتروني: ${email}رسالة: ${message}`
+            const whatsappLink = `https://api.whatsapp.com/send?text=${encodeURIComponent(whatsappMessage)}&phone=+201062429970`;
+
+            // قم بفتح نافذة جديدة لرابط واتساب
+            window.open(whatsappLink)
+
+            // إعادة تعيين النموذج
+            form.reset()
+        })
+    </script>
+
+
+
+</body></html>

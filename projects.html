@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Works</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="./images/work-1.png">
+                    <div class="layer">
+                        <h3>Teacher Management</h3>
+                        <p>Designed and developed a management system for teachers to organize study
+                            groups and track income.<br>  Technologies: Laravel, HTML, CSS, JavaScript, MySQL.<br>  Achievements: Created a scalable and efficient system with a user-friendly
+                            interface.</p>
+                        <a href="https://github.com/omar-920/mrmanager" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="./images/work-2.png">
+                    <div class="layer">
+                        <h3>My Portfolio</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam reiciendis, minima alias deserunt qui dolore? Ea laborum minima consectetur suscipit!</p>
+                        <a href="https://github.com/omar-920/omar.github.io" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="./images/work-3.png">
+                    <div class="layer">
+                        <h3>E-commerce</h3>
+                        <p>
+                            Front end project : HTML , CSS,JS <br>
+                            Ecommerce wibsite which contain Login page ,Register Page,index,products,cart,productpage
+                        </p>
+                        <a href="https://omar-920.github.io/e-commerce.github.io/" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="./images/work-1.png">
+                    <div class="layer">
+                        <h3>Teacher Management</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam reiciendis, minima alias deserunt qui dolore? Ea laborum minima consectetur suscipit!</p>
+                        <a href="" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="./images/work-2.png">
+                    <div class="layer">
+                        <h3>Teacher Management</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam reiciendis, minima alias deserunt qui dolore? Ea laborum minima consectetur suscipit!</p>
+                        <a href="" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="./images/work-3.png">
+                    <div class="layer">
+                        <h3>Teacher Management</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam reiciendis, minima alias deserunt qui dolore? Ea laborum minima consectetur suscipit!</p>
+                        <a href="" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a href="./index.html" class="btn">Portflio</a>
+    </div>
+    
+    <!------------------------------------------ JS Script  ---------------------------------------->
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+
+        function openmenu() {
+            sidemenu.style.right = "0";
+        }
+
+        function closemenu() {
+            sidemenu.style.right = "-200px";
+        }
+    </script>
+    <script>
+        //  const scriptURL = 'https://script.google.com/macros/s/AKfycbzzl7g_-TaH7izwaaIY3qNECjDqGWmaE2hRW9zIRPLsQS7EJpf0mF0FCu7z09cMMKH4/exec'
+        //  const form = document.forms['submit-to-google-sheet']
+        //  const msg = document.getElementById("msg")
+        //  
+        //  form.addEventListener('submit', e => {
+        //    e.preventDefault()
+        //    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        //      .then(response => {
+        //        msg.innerHTML = "Message Sent Successfuly"
+        //        setTimeout(function(){
+        //            msg.innerHTML = ""
+        //        },5000)
+        //        form.reset()
+        //    })
+        //      .catch(error => console.error('Error!', error.message))
+        //  })
+    </script>
+
+
+    <script>
+        const form = document.forms['submit-to-whatsapp']
+
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+
+            // قم بجمع بيانات النموذج
+            const formData = new FormData(form)
+            const name = formData.get('name')
+            const email = formData.get('email')
+            const message = formData.get('message')
+
+            // قم ببناء رابط الرسالة على WhatsApp
+            const whatsappMessage = `اسم: ${name}بريد إلكتروني: ${email}رسالة: ${message}`
+            const whatsappLink = `https://api.whatsapp.com/send?text=${encodeURIComponent(whatsappMessage)}&phone=+201062429970`;
+
+            // قم بفتح نافذة جديدة لرابط واتساب
+            window.open(whatsappLink)
+
+            // إعادة تعيين النموذج
+            form.reset()
+        })
+    </script>
+
+</body>
+</html>
